@@ -1,19 +1,54 @@
-import { sum } from './src/js/sum.js';
+import { func } from './src/js/func.js';
 
 
 // сложение
-sum('a', true);
-sum(true, 'a');
-sum('a', 1);
-sum(1, 'a');
-sum(1, true);
-sum(true, 1);
-sum(true, false);
-sum(1, 2);
-sum(undefined, 1);
-sum(undefined, undefined);
-sum(NaN, 1);
-sum(NaN, true);
-sum('a', NaN);
-sum(NaN, NaN);
-sum('a', undefined);
+func('+','a', true);
+func('+', true, 'a');
+func('+', 'a', 1);
+func('+', 1, 'a');
+func('+', 1, true);
+func('+', true, 1);
+func('+', true, false);
+func('+', 1, 2);
+func('+', undefined, 1);
+func('+', undefined, undefined);
+func('+', NaN, 1);
+func('+', NaN, true);
+func('+', 'a', NaN);
+func('+', NaN, NaN);
+func('+', 'a', undefined);
+
+// умножение
+func('*','a', true);
+func('*', true, 'a');
+func('*', 'a', 1);
+func('*', 1, 'a');
+func('*', 1, true);
+func('*', true, 1);
+func('*', true, false);
+func('*', 1, 2);
+func('*', undefined, 1);
+func('*', undefined, undefined);
+func('*', NaN, 1);
+func('*', NaN, true);
+func('*', 'a', NaN);
+func('*', NaN, NaN);
+func('*', 'a', undefined);
+
+// деление
+
+func('/','a', true);
+func('/', true, 'a');
+func('/', 'a', 1);
+func('/', 1, 'a');
+func('/', 1, true);
+func('/', true, 1);
+func('/', true, false);
+func('/', 1, 2);
+func('/', undefined, 1);
+func('/', undefined, undefined);
+func('/', NaN, 1);
+func('/', NaN, true);
+func('/', 'a', NaN);
+func('/', NaN, NaN);
+func('/', 'a', undefined);
